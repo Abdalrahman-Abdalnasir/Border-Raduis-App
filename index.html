@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Border-Raduis App</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="output">
+      <div class="blob" id="blob"></div>
+    </div>
+    <div class="dimesns">
+      <div>
+        <label for="blob-width">Width</label>
+        <input type="number" value="200" class="blob-width" id="blob-width">
+      </div>
+      <div>
+        <label for="blob-height">Height</label>
+        <input type="number" value="200" class="blob-height" id="blob-height">
+      </div>
+    </div>
+    <div class="sliders">
+      <input type="range" value="30">
+      <input type="range" value="80">
+      <input type="range" value="60">
+      <input type="range" value="40">
+    </div>
+    <input type="text" id="css-code" readonly>
+    <button id="copy" class="copy">Copy</button>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

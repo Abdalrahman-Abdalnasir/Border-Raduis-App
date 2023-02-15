@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;800;1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+:root {
+  --wight-color: #fff;
+  --card1-color: #211c3d;
+  --card2-color: #2a2544;
+  --purple-color: #6b00e3;
+  --purple-color-alt: #3a1074;
+  --header-color: #1d1933;
+  --yellow-color: #f28600;
+  --background-color: #121128;
+  --tran-2: all 0.2s ease;
+  --tran-3: all 0.3s ease;
+  --tran-4: all 0.4s ease;
+  --tran-5: all 0.5s ease;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  /* color: var(--wight-color); */
+}
+/* *:focus {
+  border: none;
+  outline: none;
+} */
+body {
+  color: var(--wight-color);
+  font-family: 'Cairo', sans-serif;
+  accent-color: var(--purple-color);
+  background-color: var(--background-color);
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::selection {
+  color: var(--wight-color);
+  background-color: var(--purple-color);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--purple-color);
+  box-shadow: 0px 0px 30px 30px var(--purple-color);
+}
+.wrapper {
+  width: 45%;
+  min-width: 550px;
+  padding: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 6px;
+  transform: translate(-50%, -50%);
+  background-color: var(--card1-color);
+}
+.output {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 250px;
+  padding: 20px 0;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  background-color: var(--card2-color);
+}
+.blob {
+  height: 300px;
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(var(--purple-color), #5303ad);
+}
+.dimesns {
+  display: flex;
+  width: 100%;
+  margin: 20px 0 40px 0;
+  justify-content: space-around;
+}
+/* Remove Arrows From Inputs (Always Search) */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type = "number"] {
+  width: 80px;
+  height: 34px;
+  padding: 10px;
+  margin-top: 5px;
+  transition: var(--tran-3);
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+  background-color: var(--card2-color);
+  border: 1px solid #a0a0b0;
+}
+/* input[type = "number"]:focus {
+  background-color: #0c162d;
+} */
+label {
+  font-weight: bold;
+}
+.sliders {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+input[type = "text"] {
+  width: 82%;
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  margin-top: 40px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #a0a0b0;
+  background-color: var(--card2-color);
+}
+button {
+  width: 13%;
+  margin-left: 4%;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 4px;
+  color: var(--wight-color);
+  transition: var(--tran-3);
+  background-color: var(--purple-color);
+}
+button:hover {
+  filter: brightness(116%);
+}
+@media (max-width: 580px) {
+  .wrapper {
+    min-width: 370px;
+  }
+  button {
+    margin-left: 3%;
+    font-size: 14px;
+  }
+}
+/* 46% 54% 56% 44% / 66% 52% 48% 34% */
